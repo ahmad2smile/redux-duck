@@ -13,10 +13,10 @@ Run from root of you project:
 It would create following files. Use `-js` for JS files default is TS.
 
 ```
-ceated: ./appState/duckname/actions/ducknameActions.ts
-ceated: ./appState/duckname/reducers/ducknameReducers.ts
-ceated: ./appState/duckname/sagas/ducknameSagas.ts
-ceated: ./appState/duckname/types/ducknameTypes.ts
+created: ./appState/duckname/actions/ducknameActions.ts
+created: ./appState/duckname/reducers/ducknameReducers.ts
+created: ./appState/duckname/sagas/ducknameSagas.ts
+created: ./appState/duckname/types/ducknameTypes.ts
 ```
 
 `tree` :
