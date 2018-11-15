@@ -1,0 +1,4 @@
+[[package]]
+name = "redux-duck"
+version = "0.1.0"
+

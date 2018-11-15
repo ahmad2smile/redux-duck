@@ -1,0 +1,6 @@
+[package]
+name = "redux-duck"
+version = "0.1.0"
+authors = ["ahmad <ahmad2smile@gmail.com>"]
+
+[dependencies]
