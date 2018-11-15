@@ -10,7 +10,7 @@ Run from root of you project:
 ./redux-duck duckname
 ```
 
-It would create following files.
+It would create following files. Use `-js` for JS files default is TS.
 
 ```
 ceated: ./appState/duckname/actions/ducknameActions.ts
