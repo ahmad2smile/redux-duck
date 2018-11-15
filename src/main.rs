@@ -32,9 +32,9 @@ fn main() {
 			if metadata(duck_file.clone()).is_err() {
 				File::create(duck_file.clone()).expect("Something went wrong!");
 
-				println!("ceated: {}", duck_file);
+				println!("created: {}", duck_file);
 			} else {
-				println!("NOT ceated: {}", duck_file);
+				println!("NOT created: {}", duck_file);
 			}
 		}
 	}
