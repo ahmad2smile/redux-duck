@@ -14,20 +14,21 @@ fn main() {
 	});
 
 	let duck_append: String = "./appState/".to_owned();
-	let redux_types = vec!["Actions", "Reducers", "Sagas", "Types"];
+	let redux_paths = vec!["actions", "reducers", "sagas", "queries", "types"];
+	let redux_files = vec!["Actions", "Reducer", "RequestSaga", "Queries", "Types"];
 
 	for i in 1..arguments.duck.len() {
 		let duck = &arguments.duck[i];
 		let path = duck_append.clone() + &duck;
 
-		for file in &redux_types {
+		for path_index in 0..redux_paths.len() {
 			let duck = duck.clone();
 			let extension = arguments.extension.clone();
-			let duck_file_path = path.clone() + &"/" + &file.clone().to_lowercase();
+			let duck_file_path = path.clone() + &"/" + &redux_paths[path_index];
 
-			create_dir_all(duck_file_path.clone()).expect("Could not create Dirs");
+			create_dir_all(duck_file_path.clone()).expect("Could not create dirs");
 
-			let duck_file = duck_file_path + &"/" + &duck + file + &extension;
+			let duck_file = duck_file_path + &"/" + &duck + redux_files[path_index] + &extension;
 
 			if metadata(duck_file.clone()).is_err() {
 				File::create(duck_file.clone()).expect("Something went wrong!");
